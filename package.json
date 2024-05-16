@@ -2,6 +2,9 @@
   "name": "@seed-ship/n8n-nodes-voyage-embeddings",
   "version": "0.1.0",
   "description": "n8n node to embed content with voyageai embeddings.",
+  "publishConfig": {
+    "@seed-ship:registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "n8n-community-node-package"
   ],
