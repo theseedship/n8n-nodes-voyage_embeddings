@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-voyage-embeddings",
+  "name": "@seed-ship/n8n-nodes-voyage-embeddings",
   "version": "0.1.0",
   "description": "n8n node to embed content with voyageai embeddings.",
   "keywords": [

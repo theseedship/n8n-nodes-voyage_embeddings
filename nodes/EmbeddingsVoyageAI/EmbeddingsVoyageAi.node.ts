@@ -26,7 +26,9 @@ export class EmbeddingsVoyageAi implements INodeType {
 		defaults: {
 			name: 'Embeddings VoyageAI',
 		},
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-inputs-wrong-regular-node
 		inputs: [],
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
 		outputs: [NodeConnectionType.AiEmbedding],
 		outputNames: ['Embeddings'],
 		requestDefaults: {
@@ -39,8 +41,8 @@ export class EmbeddingsVoyageAi implements INodeType {
 				name: 'model',
 				type: 'string',
 				default: 'voyage-large-2-instruct',
-				description: 'The model to use for generating embeddings.',
-			},
+				description: 'The model to use for generating embeddings'
+			}
 		],
 	};
 

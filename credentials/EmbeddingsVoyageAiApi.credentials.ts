@@ -5,12 +5,12 @@ import type {
     INodeProperties
 } from 'n8n-workflow';
 
-export class EmbeddingsVoyageAi implements ICredentialType {
+export class EmbeddingsVoyageAiApi implements ICredentialType {
 	name = 'voyageaiApi';
 
 	displayName = 'VoyageAI API';
 
-	documentationUrl = 'voyageai';
+	documentationUrl = 'https://docs.voyageai.com/docs/embeddings';
 
 	properties: INodeProperties[] = [
 		{
