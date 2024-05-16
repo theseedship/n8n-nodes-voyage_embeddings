@@ -6,6 +6,23 @@ https://www.npmjs.com/package/@seed-ship/n8n-nodes-voyage-embeddings
 
 ## More information
 
+First Community Release: VoyageAI n8n Node
+We are excited to announce our first release to the community!
+
+With this release, we introduce the VoyageAI n8n node, allowing you to seamlessly embed your content using VoyageAI, the world's leading embedder on the MTEB benchmark.
+
+Key Features:
+
+Seamless Embedding: Effortlessly integrate VoyageAI's powerful embedding capabilities into your workflows.
+Top Performance: Benefit from the highest-ranking embedder on the MTEB benchmark.
+Easy Integration: Designed for simplicity and ease of use within the n8n automation platform.
+We look forward to your feedback and contributions as we continue to improve and expand our capabilities!
+
+Contributors
+@Alexis-Arduca @Muvikx @nicolas-geysse
+
+The input_type is missing, but it's not integrated into Voyage embeddings of Langchain
+Please help us fix this ! 👯
 Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
 
 ## License
