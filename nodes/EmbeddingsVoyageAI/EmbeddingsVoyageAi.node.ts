@@ -65,7 +65,7 @@ export class EmbeddingsVoyageAi implements INodeType {
 				],
 				placeholder: 'Choose Input Type',
 				description: 'Configure if you embed document or query (not implemented)',
-				default: '',
+				default: undefined,
 			},
 		],
 	};
