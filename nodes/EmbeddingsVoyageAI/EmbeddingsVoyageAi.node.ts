@@ -44,29 +44,21 @@ export class EmbeddingsVoyageAi implements INodeType {
 				description: 'The model to use for generating embeddings'
 			},
 			{
-				displayName: 'Input Type',
-				name: 'inputType',
-				type: 'options',
+				displayName: 'Options',
+				name: 'options',
+				placeholder: 'Add Option',
+				description: 'Additional options to add',
+				type: 'collection',
+				default: {},
 				options: [
 					{
-						displayName: 'Document',
-						name: 'document',
-						description: 'Usage for documents',
-						type: 'string',
+						displayName: 'Input Type',
+						name: 'inputType',
 						default: '',
-					},
-					{
-						displayName: 'Query',
-						name: 'query',
-						description: 'Usage for query',
+						description: 'Configure if you embed document or query (not implemented)',
 						type: 'string',
-						default: '',
 					},
 				],
-				placeholder: 'Choose Input Type',
-				description: 'Configure if you embed document or query (not implemented)',
-				// eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-options
-				default: 'document',
 			},
 		],
 	};
