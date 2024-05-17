@@ -46,26 +46,26 @@ export class EmbeddingsVoyageAi implements INodeType {
 			{
 				displayName: 'Input Type',
 				name: 'inputType',
-				placeholder: 'Choose Input Type',
-				description: 'Configure if you embed document or query (not implemented)',
-				default: '',
+				type: 'options',
 				options: [
 					{
 						displayName: 'Document',
 						name: 'document',
-						default: '',
 						description: 'Maximum number of documents to send in each request',
 						type: 'string',
+						default: '',
 					},
 					{
 						displayName: 'Query',
 						name: 'query',
-						default: '',
 						description: 'Whether to strip new lines from the input text',
 						type: 'string',
+						default: '',
 					},
 				],
-				type: 'string'
+				placeholder: 'Choose Input Type',
+				description: 'Configure if you embed document or query (not implemented)',
+				default: '',
 			},
 		],
 	};
