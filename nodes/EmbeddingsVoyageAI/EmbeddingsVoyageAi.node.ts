@@ -42,17 +42,43 @@ export class EmbeddingsVoyageAi implements INodeType {
 				type: 'string',
 				default: 'voyage-large-2-instruct',
 				description: 'The model to use for generating embeddings'
-			}
+			},
+			{
+				displayName: 'Input Type',
+				name: 'inputType',
+				placeholder: 'Choose Input Type',
+				description: 'Configure if you embed document or query (not implemented)',
+				default: '',
+				options: [
+					{
+						displayName: 'Document',
+						name: 'document',
+						default: '',
+						description: 'Maximum number of documents to send in each request',
+						type: 'string',
+					},
+					{
+						displayName: 'Query',
+						name: 'query',
+						default: '',
+						description: 'Whether to strip new lines from the input text',
+						type: 'string',
+					},
+				],
+				type: 'string'
+			},
 		],
 	};
 
 	async supplyData(this: IExecuteFunctions, itemIndex: number): Promise<SupplyData> {
 		const credentials = await this.getCredentials('voyageaiApi');
 		const modelName = this.getNodeParameter('model', itemIndex) as string;
+		// const inputType = this.getNodeParameter('inputType', itemIndex) as string;
 
 		const embeddings = new VoyageEmbeddings({
 			apiKey: credentials.apiKey as string,
 			modelName,
+			// inputType
 		});
 
 		return {
