@@ -51,21 +51,22 @@ export class EmbeddingsVoyageAi implements INodeType {
 					{
 						displayName: 'Document',
 						name: 'document',
-						description: 'Maximum number of documents to send in each request',
+						description: 'Usage for documents',
 						type: 'string',
 						default: '',
 					},
 					{
 						displayName: 'Query',
 						name: 'query',
-						description: 'Whether to strip new lines from the input text',
+						description: 'Usage for query',
 						type: 'string',
 						default: '',
 					},
 				],
 				placeholder: 'Choose Input Type',
 				description: 'Configure if you embed document or query (not implemented)',
-				default: undefined,
+				// eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-options
+				default: 'document',
 			},
 		],
 	};
