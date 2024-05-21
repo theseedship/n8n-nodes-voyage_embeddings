@@ -44,21 +44,11 @@ export class EmbeddingsVoyageAi implements INodeType {
 				description: 'The model to use for generating embeddings'
 			},
 			{
-				displayName: 'Options',
-				name: 'options',
-				placeholder: 'Add Option',
-				description: 'Additional options to add',
-				type: 'collection',
-				default: {},
-				options: [
-					{
-						displayName: 'Input Type',
-						name: 'inputType',
-						default: '',
-						description: 'Configure if you embed document or query (not implemented)',
-						type: 'string',
-					},
-				],
+				displayName: 'Input Type',
+				name: 'inputType',
+				default: 'document',
+				description: 'Configure if you embed document or query',
+				type: 'string',
 			},
 		],
 	};
@@ -66,12 +56,12 @@ export class EmbeddingsVoyageAi implements INodeType {
 	async supplyData(this: IExecuteFunctions, itemIndex: number): Promise<SupplyData> {
 		const credentials = await this.getCredentials('voyageaiApi');
 		const modelName = this.getNodeParameter('model', itemIndex) as string;
-		// const inputType = this.getNodeParameter('inputType', itemIndex) as string;
+		const inputType = this.getNodeParameter('inputType', itemIndex) as string;
 
 		const embeddings = new VoyageEmbeddings({
 			apiKey: credentials.apiKey as string,
 			modelName,
-			// inputType
+			inputType: inputType,
 		});
 
 		return {
