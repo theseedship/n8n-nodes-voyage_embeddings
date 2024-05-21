@@ -1,2 +1,16 @@
+# Ignorer les fichiers de configuration spécifiques à macOS
 .DS_Store
+
+# Ignorer les fichiers de build de TypeScript
 *.tsbuildinfo
+
+# Ignorer les dossiers et fichiers non nécessaires
+node_modules
+src
+test
+coverage
+logs
+*.log
+
+# Inclure le dossier dist
+!.npmignore
