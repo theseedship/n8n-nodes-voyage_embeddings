@@ -23,10 +23,7 @@ We look forward to your feedback and contributions as we continue to improve and
 ### Contributors
 [@Alexis-Arduca](https://github.com/Alexis-Arduca) [@Muvikx](https://github.com/Muvikx) [@nicolas-geysse](https://github.com/nicolas-geysse)
 
-The `input_type` is missing, but it's not integrated into Voyage embeddings of Langchain.
-Please help us fix this! 👯
-
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+The `input_type` is now integrated into Voyage embeddings of Langchain !
 
 ## License
 
